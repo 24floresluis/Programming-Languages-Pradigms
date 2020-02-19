@@ -1,0 +1,28 @@
+apply plugin: 'java'
+
+repositories {
+	mavenCentral()
+}
+
+test {
+	useJUnitPlatform()
+}
+
+dependencies {
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5.2.0'
+		testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.2.0'
+		testRuntime 'org.junit.platform:junit-platform-console:1.2.0'
+}
+                                       
+sourceSets.main.java.srcDirs = ['src']
+sourceSets.test.java.srcDirs = ['test']
+
+compileJava {
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation" << "-Werror"
+}
+
+compileTestJava {
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation" << "-Werror"
+}
+
+defaultTasks 'clean', 'test'

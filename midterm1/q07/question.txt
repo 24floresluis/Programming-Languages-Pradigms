@@ -1,0 +1,29 @@
+Considering Static typing, Dynamic Typing, Strong Typing, and Weak Typing, state the nature of the TypeScript <https://www.typescriptlang.org> language on these four qualities. Discuss, give reasons for your assessment.
+
+TypeScript is similar to JavaScript but is statically typed. A notable difference in the two languages is that TypeScript prefers you to specify the type of your variables. For example, a function in JavaScript may look like this.
+
+	function hello(name) {
+    return "Hello, " + name;
+	}
+
+As you can see, JavaScript does not give compilation errors for the user not specifying the type of the variable "name". However, in TypeScript, the implementation should look a little bit different.
+
+	function hello(name: string) {
+    return "Hello, " + name;
+	}
+
+In the arguments of the function, it is preferrable and conventional when using TypeScript to specify the type, as shown above, however it will not throw errors if you do not for compatibility. The purpose is to make the code appear more understandable to programmers reading it who may not have seen the code before. Thus, TypeScript uses Static Typing rather than Dynamic typing.
+
+As far as Strong typing versus Weak typing, TypeScript similarly utilizes Strong Typing as opposed to the Weak Typing of JavaScript. When working in TypeScript it is correct to also specify variable types, or else the compiler will likely give errors. For JavaScript, we may initialize some variables in the following way.
+
+	var name = “Diego”,
+    	age = 21,
+    	isStudent = true;
+
+We are telling JavaScript that name, age, and isStudent are all vars, which does not tell much to someone reading the code. TypeScript allows us to write the above as the following.
+
+	let name: string = “Diego”,
+    	age: number = 21,
+    	isStudent: boolean = true;
+
+With Strong Typing, it is clear what the data types we are working with are, and it helps the compiler throw errors should it find any incorrect usage of variables. This is useful to programmers because it makes the code more comprehensible. It is accurate to say TypeScript has Strong Typing since it has the capability of explicitly defining variable types, instead of a language with Weak Typing like JavaScript which does not have explicitly defined types for its variables. For similar reasons TypeScript is also Statically Typed, as its main purpose is to provide a superset of JavaScript that enables its variables to be specifically typed should the programmer choose to do so.

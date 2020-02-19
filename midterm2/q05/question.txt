@@ -1,0 +1,6 @@
+What are persistent data structures. Give examples. What benefit they provide 
+over regular data structures? Under what context would you use them?
+
+Persistent data structures are those who "version" their current values so that both older and newer values persist without hurting performance. "Persistent" refers to the data itself and not the data structure, so these can remain immutable. Clojure and Scala both utilize these, with Scalas's update operation on vectors that maintains the old values, and Clojure's transient data structures which can be created from persistent data structures.
+
+These data structures are useful because they provide an immutable way of using data structures without sacrificing functionality. Thus, you get all the benefits of immutability without losing anything. They also are designed to provide efficient updates. They can be used when a data structure is needed in functional languages and the programmer requires immutability. They are also fundamentally easier to work with than their mutable counterparts because of issues with mutability and concurrency.

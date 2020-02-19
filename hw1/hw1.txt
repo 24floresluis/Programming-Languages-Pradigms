@@ -1,0 +1,96 @@
+Please keep all files related to a homework or an assignment within the appropriate directory. Files checked in outside of specific homework or assignment directory will not be reviewed or graded for that homework/assignment.
+
+Check in and modify files as many times as you like. You will not be able to modify the files after the deadline.
+
+During pairing rotate who checks in the code. There should be somewhat (approximately) the same number of checkins from each member of a pair/team. In other words, we don't want to see check in from only one person of the pair/team.
+
+You will work as a pair, both of you are responsible for the completed work in all assignments and homework. Reasonable effort is expected from each person. If your pair does not participate you may request to switch pairs. Start early and work hard.
+
+The deadlines are strict, there will be no extensions. Don't email any code to Venkat or to the mailing list. Your last check in before the deadline will be graded. If your last check in breaks the code, both you and your pair will lose significant points.
+
+Please feel free to ask for frequent reviews. See the reviews/readme.txt file for details on how to ask for reviews.
+
+You can evolve the answers and solutions based on the reviews. Only the latest checkin at the time of review will be looked at. Also the final check in will be the only one graded.
+
+Please read the academic honesty policy posted on the course mailing list.
+
+Now to homework #1.
+
+------------------------------------------------------------------------------
+HW1: Due 11:59PM August 31
+
+What are the differences between statements and expressions. Give examples. What are the benefits and the consequences of using each one of them. 
+
+Feel free to read up, but do provide references to where you learn from. The description should be in your own words. If you find some really catchy phrases or quotes you'd like to use, do so, but put them in double quotes along with the name of who said (wrote) it.
+
+Share your own experiences, observations, things that may have intrigued you.
+
+Your response goes here:
+
+Although at first glance it might seem like statements and expressions, to the untrained programmer, serve the same function, their underlying natures are very different. Statements are most often some sort of action that accomplishes something or executes an operation, while expressions are logical evaluations executed in one moment. Each of these have different purposes and can be the difference between efficient and inefficient code if they are truly understood and applied accordingly.
+
+
+To start off, we need to define the concept of side-effects. In this context we define a side-effect as the mutation a variable, in other words, changing memory. In a familiar C++ context:
+
+	1.	int x = 4;
+	2.	x = 5;
+
+Here we have a variable x that was initialized to the value 4, and then changed to the value 5 in the following line. This change of value causes memory to be changed or mutated. From here on out we will now refer to this as our side-effect.
+
+
+Now let's look at examples of expressions. To reiterate, we established that expressions perform logical evaluations.  For example: 
+
+	1.	2 + 5
+	2.	x == 1
+
+Here the first line shows a simple addition expression while the second line performs a boolean evaluation. It checks to see what the value of x is and returns a true or false. Expressions are much more flexible and can be used for different purposes, such as in an if statement, or a condition in a loop and even as an if-expression in some languages. 
+
+A C++ example of an if-statement: 
+
+	1. bool check = false;
+	2. if (1 == 1) 
+	3. 	check = true;
+	4. else
+	5.	check = false;
+	6. return check;
+
+Now a javascript if-expression example using the ternary operator:
+
+	1. return ((1 == 1)) ? true : false)
+
+The first example here shows how an if-statement makes use of the expression 1 == 1 to determine the outcome of the return. On the other hand the entire second example, which also happens to be a single line, performs the same function but rather evaluates the expression 1 == 1 as an operand of the same if-expression thus making the entire line an expression in itself. This returns true when the condition 1 == 1 returns a true boolean value and false if it returns a false boolean value.
+
+
+One key and crucial trait of expressions is that they do not force mutability, our previously defined side-effect. An example is the expression i++, this although being an expression, mutates the value of i, increasing it by 1. This contrasts with the nature of statements which force mutability. This can be seen in our if-statement example above where the statement mutates the value of the boolean variable check thus leading to our side-effect. The fact that expressions do not forcibly lead to a side-effect is essential in concurrent applications. 
+
+To understand the issue with concurrency one needs to focus on the side-effects of mutability and first introduce a little more the nature of statements. The command "System.out.println(x)" is a statement because it doesn't evaluate to some value but instead tells the computer to do an action. In the if-statement example above we recall, the boolean value of check was changed once it returned in line 6 and if we modified line 2 like so:
+	
+	...
+	2. if(check)
+	...
+
+this change highlights our side-effect. If we were to run this statement once more, it would first evaluate the value of check, which could be true or false depending on the previous return. This leads to uncertainty or at least inconsistency when executing the statement thus it is not safely repeatable. Another side-effect bound issue in concurrency is the danger in order. Because of the side-effect, statements are bound by order.
+
+A C++ example: 
+
+	(a)
+		1. string name;
+		2. cin >> name;
+		3. cout << name;
+
+	(b)
+		1. string name;
+		2. cout << name;
+		3. cin >> name; 
+
+It is important to notice that in the above examples (a) and (b), although the same statements are used, they do not produce the same results. Input then, console print or not the same as console print and then input. These two facts underline the hindrance of mutability in statements when considering concurrency. Statements "by definition are evil" (Venkat) by mutating memory which renders statements non parallelizable since changing memory cannot be done concurrently. Equally, since expressions in contrast to statements are immutable, they allow for favorable behaviors such as consistent results when repeatedly called, easy to test for errors due consistent results, and can reordered in some cases. For example  
+
+	1. square(5) - cube(2) // 5^2 - 2^3 = 25 - 8 = 17
+
+Here, the expressions square() and cube() can be done concurrently even if the subtraction has a specific mathematical order. For all these reasons expressions, as they do not force mutability and thus no side-effect are ideal for multiprocessing and multithreading as there is no thread contention. 
+
+
+In the end one thing is quite clear, although seemingly similar, statements and expressions are quite different. This difference makes the difference between highly parallelizable operations and those that are not. Statements are evil, while expressions are well behaved and highly efficient. Thus just like functional languages favor expressions in benefit of parallelization, it'd be best to become more "expressive" in our programming.
+
+
+Total [10]: 10

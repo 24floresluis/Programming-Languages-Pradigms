@@ -1,0 +1,64 @@
+[Reviewed 10/03/18 04:31 AM MDT]
+synopsis: You're done 
+
+details:             
+
+Yay
+
+------------------------------------------------------------------------------
+[Reviewed 10/02/18 04:33 AM MDT]
+synopsis: almost done 
+
+details:
+1.
+
+Good.
+
+2.
+
+Good
+
+3.
+
+{name, breed, color, age} = dog  - const or let before the variables?
+
+Please do not use var anywhere in this file.
+
+4.
+
+"trying to define a block of code" - with a label?
+
+------------------------------------------------------------------------------
+[Reviewed 10/01/18 05:04 AM MDT]
+synopsis: good start 
+
+details:
+1.
+
+Let's reduce this part to one paragraph with a few sentences. We can defer the examples to later sections.
+
+2. 
+
+We should not use var anymore in JavaScript. Please use const or let.
+
+Will be nice to see the values in the two variables before the swapping.
+
+3.
+
+Let's write in different parts here.
+
+Destructring array
+Destructring object
+Destructring with default value
+Destructring with rest ...
+
+Let's write short paragraphs for each and present the examples, and then discuss the example before moving to the next example.
+
+4.
+
+In the second limitation, on collision, let's mention also how to resolve it.
+
+In the last limitation, it is more than a matter of inconvenience, what happens if we do not put a (), let's discuss why that limitation exists.
+
+------------------------------------------------------------------------------
+34

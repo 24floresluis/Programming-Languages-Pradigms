@@ -1,0 +1,90 @@
+Assign1 Due 11:59PM September 14
+
+For this assignment we will use three different languages. One has to be a statically typed language. One has to be a dynamically typed language. A third is your choice. Do not pick two languages that are too similar to each other.
+
+Create files using proper extensions. Also create either a build file or a sh file that will compile (if necessary) and run your code to display the output or show test results automatically.
+
+If you need help with any of the steps, please ask. You do not have to fight with tools or code for a long time. The purpose of this course is to learn. If you're stuck, then ask for help and it will be given. If you start early, you will be able to make much better progress than if you start late.
+
+Given the following names, as an example,
+
+Abdon, Brandon, Christopher, Daniel, Denys, Diego, Edrienne, Eugene, Ezequiel, Gustavo, Houtan, Jeffry, Lina, Luis, Martin, Matthew, Mike, Naresh, Nicolas, Patricio, Pio, Rachel, Ravali, Samad, Shaneej, Shara, Sikender, Tommy, Venkat, Victor, Zachary
+
+write a program to 
+
+1. use mutability and imperative style to compute the average number of letters in the names.
+
+2. use mutability and imperative style to compute the number of names starting  with each letter (don't include a letter if no name stars with it).
+
+3. use immutability and functional style to compute the average number of letters in the names.
+
+4. use immutability and functional style to compute the number of names starting with each letter (don't include a letter if no name stars with it).
+
+Keep the printing of the results separate from the code/function that does the actual work and returns the result.
+
+Start with one language. Write code in that languages, evolve it using reviews. Once you've completed code in one language (and gotten a satisfactory review), then create in second language. Once that's completed, proceed to the third language, while using reviews in each step.
+
+After completing the coding (and only after that), answer the following questions:
+
+1. Discuss some of the things you have learned from working on this assignment.
+
+    Once thing that I really enjoyed learning was the usage of streams in functional programming. The idea that you can do a lot with just one line of code was amazing to me. It was a bit hard to wrap your head around it at first but once you do it's really fun. Once you also realize the benefits of functional programming it just makes it that much better since you can use this for so many applications of concurrency. The use of lanbda's was also a neat experience which really came hand in hand with the functional style. The difference between imperative and functional programming styles are just night and day and I've really enjoyed struggling with and will keep doing it and start using it regulary as much as possible.
+
+    Another thing that I learned from working with Java, Ruby and Scala is just how different syntax can be but even then it's not really a barrier. Yes, you do spend quite more time undoing your habits and it get's frustrating but at some point you remove yourself from the syntax and you just focus on the semantics, accepting that you might not know 100% the syntax from memory and that's perfectly fine! I've really enjoyed working with Ruby and Scala since they don't have a need for the maticulous syntax that Java enforces but yet is still familiar.
+
+
+2. Were there any thing that surprised you or things that you did not expect.
+
+    I was surprised at how concise Ruby code could be. Despite being totally different to what I am used to I still found it very readable and comprehensible. I also was not quite ready for the shift in thinking from imperative to functional. You really have to approach the problem from a different angle to find a solution. I expected the logic to follow through in the same way it does in my head for imperative solutions.
+
+    One thing that I did not expect was the simplicity of functional programming. From previous persoanl research from even before lectures was that functional programming was complicated and just didn't make sense to use. At first it was hard but after watching the lectures and struggling with the functional programming applications of all the languages we worked with I realized that they all are implemented very similarly! This helps greatly when implementing.
+
+3. Given this experience, draw a comparison between the imperative style and the functional style.
+
+    The imperative and functional styles both shared the concept of iterating through collections. Even if we did not write an explicit loop, both styles required processing every single element in a specific matter. Functional style uses internal iterators to achieve this very well reducing the ceremony on how to access the data.
+
+    From the experience of this assignment, imperative programming focuses on handling the details (ceremony) of handling data types very hands on, having to write every single step word by word and modifying memory constantly along the way. Functional prgramming on the other hand is big picture oriented and helps to get things done by allowing a focus on what exactly you're trying to do not the how. 
+
+4. Given this experience, draw a comparison between static typing and dynamic typing.
+
+    Dynamic typing does not have a need to declare explicitely data like String, int, etc. and can be inferred, this is differemt in a statically typed language where you must use it. For instance, a program will misbehave if you ask it to sum a variable that you previously initialized to a String. Dynamic also does have types like static typing, it may just be not seen due to reduced ceremony and the fact that it's not required. 
+
+    Static typing by nature aids by forcing you to think in advance of what data type your working with exactly which helps to find typing mismatch quickly becuase the compiler doesn't let you!
+
+    Dynamic is handy and neat because you don't have to declare it but can be conflicting data, tests helped iron out this issues but it still can run the risk in larger projects if errors aren't handled properly.
+
+5. Of the three languages that you used, what are your impressions about each, their strengths, weaknesses, your likes/dislikes.
+
+    Scala
+        Scala was a bit confusing with choice of words and documentation which was not all too clear. All the optionals always left me wondering if I had to place the syntax or not but it's good to know you don't need it and you quickly get used to it. This language was fairly unique in that it supported both paradigms of programming, imperative and functional, and I liked that. However, it felt very verbose, for instance when writing out functions it demands a lot syntactically, and I did not like that as an introduction to the language.
+    Ruby
+        Ruby was great in our opinion simple syntax, less to worry about, very clear doesn't suffer form lenghty and time consumming ceremonies. I really appreciated the simplicity and that was one of its biggest strengths. It's hard to pinpoint a weakness from the scope of this assignment, I've read online that performance is an issue but not something we experienced in a project of this size. 
+    Java
+        I liked learning about it's functional application that comes from Java8, something I wasn't used to with my traditional Java experience. Its strengths include the vast amount of libraries available for it as well as the many purposes it can be adapted to fulfill. However, like most statically typed languages, it suffers from requiring a lot of ceremony.
+
+
+Total [100]: 100
+
+Java [30]:
+Build present and tests work [5]:
+Language conventions, etc. [5]:
+Imperative solutions [5]:
+Functional average [5]:
+Functional count [10]:
+
+Ruby [30]:
+Build present and tests work [5]:
+Language conventions, etc. [5]:
+Imperative solutions [5]:
+Functional average [5]:
+Functional count [10]:
+
+Scala [30]:
+Build present and tests work [5]:
+Language conventions, etc. [5]:
+Imperative solutions [5]:
+Functional average [5]:
+Functional count [10]:
+
+Response to questions [10]:
+Please spellcheck.

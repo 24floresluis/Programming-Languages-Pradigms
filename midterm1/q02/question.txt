@@ -1,0 +1,17 @@
+(tail recursion:)
+Use one of the languages you used for assignment 2.
+
+Save the source file with proper extension and provide a build file to run the code. Don't write any tests, only code for this question. Follow language conventions.
+
+Write a function that will take a number (assume >= 1) as parameter and 
+return the sum of square of numbers from 1 to the number. For example, given 
+5, the result will be 55, since 1 + 4 + 9 + 16 + 25 totals to that value.
+
+Write the function using tail recursion and without using any mutable variable 
+anywhere in the code. From the caller side, pass only one argument for the 
+number parameter.
+
+Call the function for input values of 1, 3, 5, and 8.
+
+Keep the type as integer, don't worry about long or biginteger.
+

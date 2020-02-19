@@ -1,0 +1,13 @@
+(functional:)
+In a language of your choice, write a guessing game program. When started, the
+program picks a number between 1 and 100. Prompts the user to guess. Provides 
+a message if the value guessed is higher or lower than the number. When the 
+user figures out the number, it displays the number of attempts the user took.
+
+Keep this as a short console application.
+
+Write the code using functional style (no recursion) with no explicit 
+mutability.
+
+Keep your code in a separate file with proper extension so we can actually run 
+the program. Create a build file to easily run the program.

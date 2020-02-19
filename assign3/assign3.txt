@@ -1,0 +1,58 @@
+Assignment 3: Due 11:59PM October 26
+
+We're going to design and implement a DSL—Domain Specific Language in this assignment. The syntax for the DSL will be influenced by the languages we use.
+
+Design a DSL in two different languages, one statically typed and the other dynamically typed.
+
+The DSL will be used to schedule a meeting. The syntax has to be highly fluent (not feel like code), have less noise, read more like English. The syntax will vary depending on the capability of the  languages used, but here's one example:
+
+schedule meeting
+  name 'early admissions'
+  start 14:30
+  end 15:30     
+  on 10 15 2018
+  participants {
+    'Kim R.'
+    'Mike B.'
+    'Paula P.'
+    'Chin Z.'
+  }
+
+Running this code should print the details of the meeting: the name, start time, end time, duration, the date, how many people will attend, and the names of those who will attend.
+
+Create build files and write code in increments after writing test first.
+The key is to take small steps, get one line of the DSL working at a time. 
+This will help you solve one problem at a time and avoid getting overwhelmed 
+with issues.
+
+Ask for frequent reviews, start with one language first, get that done before 
+taking on the next language.
+
+Do not use Java, C#, C++, or Python. Choose a language that will be very 
+fluent in syntax—less noise, less ceremony, less clutter,...
+
+Total [100]: 93
+
+Groovy:
+Driver program works properly [5]:
+Fluency:
+  schedule meeting [5]:
+  name [5]:
+  start and end [10]:
+  date [10]:
+  participants [10]:
+Code quality [5]:
+
+Kotlin:
+Driver program works properly [5]: -5
+Build fails to compile
+
+Fluency:
+  schedule meeting [5]:
+  name [5]:
+  start and end [10]:
+  date [10]:
+  participants [10]:
+Code quality [5]: -2
+Commented out stuff in code.
+Review notes still left in code.

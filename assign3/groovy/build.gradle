@@ -1,0 +1,28 @@
+apply plugin: 'groovy'
+
+repositories {
+	mavenCentral()
+}
+
+test.testLogging.events 'passed', 'failed'
+test.testLogging.exceptionFormat "short"
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.5.2'
+    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+}
+
+task deletebin {
+    delete "${rootDir}/bin"
+    delete "${rootDir}/build"
+}
+
+task runScript (type: Exec) {
+    commandLine 'groovy'
+    args 'test/run.groovy'
+}
+
+sourceSets.main.groovy.srcDirs = ['src']
+sourceSets.test.groovy.srcDirs = ['test']
+
+defaultTasks 'clean', 'test', 'runScript'

@@ -1,0 +1,51 @@
+Assignment 4: Due 11:59PM November 16
+
+We will write programs in two different languages in this assignment, one in a 
+statically typed language and the other in a dynamically typed language. One 
+language you use should be one you have not used in assignments 1 to 3.
+
+We will create a console application (no GUI). The program should not use any 
+mutability - that is once a variable is created, do not change its value.
+
+We will implement the Conway's Game of Life for an infinite universe. 
+Please see <https://goo.gl/JcAXnP>.
+
+An unbounded universe is made up of cells. A cell may be alive or it may be dead. The game has four rules for the state of each cell:
+
+A live cell with fewer than two live neighbors dies due to under population.
+A live cell with more than three live neighbors dies due to over population.
+A live cell with two or three live neighbors continues to live.
+A dead cell with three live neighbors comes to life.
+
+At the start of the program we will pass locations of live cells in the 
+universe. The program will continue to display the locations of cells that are 
+alive (with an x) and cells that are dead (with a blank). We don't have to
+display vast regions of the universe with no lives.
+
+Start with one language at a time. Start by writing unit tests for the rules 
+of the game for cell state. Then unit tests for the transformation of state in 
+the universe. You may use the examples provided in the URL above as test 
+cases. For example, block, vertical oscillator, horizontal oscillator, and one 
+of the gliders are great samples for test cases.
+
+Once you complete the tests you may write the console driver program to read the input and display the universe, at the rate of change of one second.
+
+After completing the code in one language, you can start the work on the second language.
+
+Start early and ask for reviews each day. If you are stuck with something, remember to time box your effort to a maximum of two ours and ask Venkat for help over email.
+
+Total [100]:
+
+Language 1: Python
+Program works as expected [10]:
+Implementation of logic [10]:
+Quality of Tests [10]:
+Driver honors immutability [10]:
+Code quality [10]:
+
+Language 2: Haskell
+Program works as expected [10]:
+Implementation of logic [10]:
+Quality of Tests [10]:
+Driver honors immutability [10]:
+Code quality [10]:

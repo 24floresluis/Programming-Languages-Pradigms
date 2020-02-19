@@ -1,0 +1,101 @@
+Homework 2: Due 11:59PM October 5
+
+1. What's destructuring in JavaScript?
+                                 
+    JavaScript makes use of destructuring as a means to extract, or unpack, values from objects or arrays allowing to access these without the need of auxiliary temporary variables in an easy intuitive manner. Repetitive references to name of objects using the dot operator, access through the index of an array, using temporary variables when swapping values, all operations are reduced to simple clean code with the use of destructuring. Destructuring also allows for providing default values which gives power to the programmer to be flexible in method implementations. Destructuring in summary is the means of JavaScript to reduce the tedious ceremony traditionally involved with accessing elements or properties of objects in favor of getting things done fast and elegantly.
+
+
+2. Show an example of destructuring to swap values in two variables.
+
+    > let partner1 = 'Diego'
+    undefined
+    > let partner2 = 'Luis'
+    undefined
+    > partner1
+    'Diego'
+    > partner2
+    'Luis'
+    > [partner1, partner2] = [partner2, partner1]
+    [ 'Luis', 'Diego' ]
+    > partner1
+    'Luis'
+    > partner2
+    'Diego'
+
+
+3. Show more examples of destructuring.
+    
+    For example in the following object:
+
+        const dog = {name: 'Max', breed: 'German Shepherd', color: 'Black/Tan', age: 8}
+
+    The properties of the dog object can be extracted into distinct variables, name, breed, color and age as so:
+
+        const {name, breed, color, age} = dog
+
+    These properties could then be used individually to access the specified values withing the object declaration without the need of the name of the object 'dog' as in 'dog.color'. This type of beautiful clean assignment allows for an elegant way to access object properties without the lengthy ceremony commonly associated with it which can be seen below.
+
+        const name = dog.name
+        const breed = dog.breed
+        const color = dog.color
+        const age = dog.age
+
+    To destructure an array, we would use syntax like such.
+
+        const [name, breed, color] = ['Max', 'German Shepherd', 'Black/Tan']
+
+    Like the sequential nature of an array, this method simply extracts the values in order and places them in. This method of destructuring is very intuitive.
+
+    We can also take advantage of default values when destructuring.
+
+        const [name, breed, color, nickname = 'Fluffy'] = ['Max', 'German Shepherd', 'Black/Tan']
+
+    Here, we automatically set the nickname to 'Fluffy', since the array on the right-hand side only has 3 elements, satisfying name, breed, and color.
+
+    Lastly, we have rest extraction for when we do not care to give a name for certain values after some point, but we do not want to lose them.
+
+        const [name, ...remainingValues] = ['Max', 'German Shepherd', 'Black/Tan', '8']
+
+    Here, name will take 'Max' while remainingValues will contain ['German Shepherd', 'Black/Tan', '8'].
+
+    Another example is the seemingly "atomic" way that destructuring allows to reassign values of variables like follows:
+
+        const lastname = 'Subramaniam'
+        const fistname = 'Venkat'
+
+        [firstname, lastname] = [lastname, firstname]
+
+    In the above example the values would the read correctly 'Venkat' in variable firstname and 'Subramaniam' in variable lastname.
+
+    Destructuring in summary is the means of JavaScript to reduce the tedious ceremony traditionally involved with accessing elements or properties of objects in favor of getting things done fast and elegantly.
+
+
+4. What are some of the restrictions to using destructuring.
+
+    The syntax required to use destructuring can be a bit unorthodox at first, notably when extracting the attributes from an object into distinct variables. It is a different way of thinking but nonetheless a useful approach.
+
+    We have to worry about collisions when using destructuring, and thus cannot have the same local variable names.
+
+    const { name, addr: { street }, house: { street: street } } = st;
+
+    This code would not permitted as both variables are named street. To resolve this, we could rename the second street to something like "houseStreet". We simply need to pick different local variable names.
+
+    Another small limitation is when extracting into pre-existing variables, you must surround the code with parentheses, although this is more of an inconvenience, as it makes the code appear less clean.
+
+        let theBreed = 'Golden Retriever';
+        {breed: theBreed} = dog;
+
+    The above code would need to be changed to the following.
+
+    let theBreed = 'Golden Retriever';
+    ({breed: theBreed} = dog);
+
+    This is necessary because without the parentheses, it appears we are creating a label and JavaScript does not expect the '=' that follows. It only makes sense to the language when using it to extract from an array.
+
+
+Total [10]: 10
+
+1. What and why? [2]:
+2. correct example [2]:
+3. Different examples [3]:
+4. Multiple limitations [3]:

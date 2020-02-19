@@ -1,0 +1,166 @@
+[Reviewed 11/16/18 06:51 AM CET]
+synopsis: need to run the driver from build 
+
+details:    
+I apologize for the previous review, I must have been distracted and erred during the review. Please use this review instead of that one.
+
+Haskell:
+
+When the build.sh is run the program is not running. When the build file is run the tests should run and then the program should start (just like in the other language).
+
+For printing the cells repeatedly, please see the sample under the prototype directory.
+
+------------------------------------------------------------------------------
+[Reviewed 11/15/18 18:40 PM CET]
+synopsis: you're done 
+
+details:             
+
+yay
+
+------------------------------------------------------------------------------
+[Reviewed 11/14/18 20:02 PM CET]
+synopsis: please move forward 
+
+details:
+Haskel:
+
+Let's move forward.
+
+------------------------------------------------------------------------------
+[Reviewed 11/13/18 23:02 PM CET]
+synopsis: good so far 
+
+details:             
+
+Please move forward.
+
+------------------------------------------------------------------------------
+[Reviewed 11/12/18 10:37 AM CET]
+synopsis: good so far 
+
+details:
+Python: done
+
+Haskell:
+
+Please move forward
+
+------------------------------------------------------------------------------
+[Reviewed 11/11/18 12:30 PM CET]
+synopsis: good so far 
+
+details:
+Python:
+
+Please see suggestions in code.
+
+Haskell:
+
+Good so far. Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 11/10/18 13:15 PM CET]
+synopsis: let's keep tests focused on problem at hand
+
+details:  
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 11/09/18 15:13 PM CET]
+synopsis: please keep functions cohesive 
+
+details:                                
+
+Let's make functions cohesive. Please see suggestions in code.
+
+Let's also start on the second language.
+
+------------------------------------------------------------------------------
+[Reviewed 11/08/18 14:46 PM CET]
+synopsis: good so far 
+
+details:             
+
+Good so far.
+
+Please see suggestions in code.
+
+Next step: nextGeneration - input List of live cells, output list of live cells for the next generation.
+
+send an empty universe (empty list), get an empty universe (empty list)
+send one life cell, get an empty list back
+send a block, get a block
+send a vertical oscillator, get a horizontal oscillator
+send a horizontal oscillator, get a vertical oscillator
+send a glider, get a new value for the glider
+
+Then write a console program that sends a glider and displays the universe after each second until user terminates the program (ctrl + c).
+
+------------------------------------------------------------------------------
+[Reviewed 11/07/18 08:48 AM GMT]
+synopsis: good so far 
+
+details:             
+
+Good so far.
+
+Next tests for count_signals_for_each_cell:
+count of signals when there are no signals
+count of signals for one signal at position 1, 2
+count of signals for two signal at position 1, 2
+count of signals (3, 2), (101, 102), (3, 2)
+count of signals (3, 2), (101, 102), (3, 2), (1, 2), (3, 2), (3, 2)
+
+------------------------------------------------------------------------------
+[Reviewed 11/06/18 07:09 AM MST]
+synopsis: let's change direction 
+
+details:                        
+
+The given problem has two constraints: no mutability and the 
+universe is infinite. We can't keep around all the cells that are in an 
+infinite universe. The user can only give finite number of live cells.
+We can leverage and work off of that.
+
+A live cell can send signals to the neighbors that it is alive.
+As a first step we can collect all the signals. Then later on (not right 
+now) we can count those signals. Finally we can collect all live cells for
+the next generation (next tick) based on these counts.
+
+
+------------------------------------------------------------------------------
+[Reviewed 11/05/18 05:58 AM MST]
+synopsis: let's reduce code 
+
+details:                   
+
+Let's reduce code. We don't need the Cell class. We need only one function right now is_alive. It can take two parameters: a boolean and a number for number of live neighbors. It can return a boolean.
+
+Here are the tests we need:
+
+live cell with one live neighbor dies
+live cell with four live neighbors dies
+live cell with two live neighbor lives
+live cell with three live neighbor lives
+dead cell with one live neighbor stays dead
+dead cell with four live neighbor stays dead
+dead cell with two live neighbor stays dead
+dead cell with three live neighbor comes to life
+
+After writing these tests and one is_alive function please proceed to the next small step.
+
+Found two files with same stuff. Source should be in src and test should be in test directory.
+
+------------------------------------------------------------------------------
+[Reviewed 11/03/18 05:53 AM MDT]
+synopsis: let's move forward
+                         
+details:                    
+
+Let's move forward.
+
+------------------------------------------------------------------------------
+Python
+~Haskell

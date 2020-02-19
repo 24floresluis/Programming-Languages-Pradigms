@@ -1,0 +1,72 @@
+[Reviewed 09/27/18 09:37 AM CEST]
+synopsis: let's reduce code further 
+
+details:
+Haskell:
+
+Only total of 3 functions, please. Let's merge the two methods for tail call.
+Also, in tail call version, please reduce code used to total/sum.
+
+Closure:
+
+recursiveiterativeFib - please reduce code here. Only one call to recursive tail call.
+
+Kotlin:
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 09/26/18 05:38 AM BST]
+synopsis: let's reduce code 
+
+details:
+Haskell:
+
+The recursiveIterativeFib is not being tail recursive. For it to be tail recursive, the call should be the last one, with no further operations on the result.
+
+A way to do this will be to take position and series as argument. Then
+for 0 return [1]. For 1 return the given series. For higher values call the method passing n - 1 as first argument and (series + sum of last two values in the series) as the second argument where + is creating a new list by combining the values.
+
+Clojure:
+
+Please see suggestions in code.
+
+Please start on the third language.
+
+------------------------------------------------------------------------------
+[Reviewed 09/24/18 06:11 AM BST]
+synopsis: please check tco 
+
+details:                  
+
+Haskell:
+
+Please see suggestions in code.
+
+Let's start on the next language.
+
+------------------------------------------------------------------------------
+[Reviewed 09/23/18 10:16 AM IST]
+synopsis: please move forward 
+
+details:                     
+
+Please move forward.
+
+------------------------------------------------------------------------------
+[Reviewed 09/20/18 05:16 AM BST]
+synopsis: need to return list instead of number 
+
+details:                                       
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 09/18/18 07:21 AM BST]
+synopsis: good start 
+
+details:            
+
+Good start. Please move forward.
+
+------------------------------------------------------------------------------

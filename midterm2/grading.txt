@@ -1,0 +1,21 @@
+Total [100]: 93
+
+q1 [10]:  -5
+Misses the point about currying and how functions take only one parameter in Haskell, under the hood.
+
+q2 [10]:
+q3 [10]:
+q4 [10]:
+q5 [10]:
+q6 [10]:
+
+q7 [10]: -1
+
+Need to bring out clearly the difference between how get behaves and set behaves.
+
+q8 [10]:
+q9 [10]: -1
+
+Can be more concise with flatMap
+
+q10 [10]:

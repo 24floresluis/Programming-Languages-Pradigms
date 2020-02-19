@@ -1,0 +1,5 @@
+What critical feature of a language or a library makes infinite sequences possible?
+
+Without lazy evaluation, we cannot have infinite sequences. Each successive element in the sequence never gets evaluated until it is needed, so unlimited memory is not needed to "keep track" of the elements. This is also desirable because it saves on performance - if later parts of the sequence are never used then the evaluation simply is skipped. 
+
+Lazy evaluation is safe with pure functions, since those functions will always have the same result and no side-effects. This means that the only way to know if the evaluation occurred is to look at the result, thus its execution can be postponed as long as needed. This way we would not be missing any expected side-effects that may not occur because of lazy evaluation, since there are no side-effects in the function to begin with.

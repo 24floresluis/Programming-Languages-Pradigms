@@ -1,0 +1,7 @@
+A purely functional language can't have side-effects. However, a realistic
+program can't survive without side-effects. What do pure-functional languages
+do to get around these concerns? Explain.
+
+A language needs side-effects to communicate that it has completed an action to the user. If a program simply evaluated expressions, it would be difficult for the user to understand what is going on without print statements or some other side effect. Functional languages address this differently as they seek to avoid side-effects.
+
+For an example of getting around this, Haskell is a functional language that expresses its side effects using monadic actions. It allows for a generic structure by creating its own data type and can handle many different problems. Other functional languages implement similar monadic solutions to accomplish input/output. However, some functional languages like Scala do not restrict side-effects, and instead simply leave it up to the programmer to keep them out.

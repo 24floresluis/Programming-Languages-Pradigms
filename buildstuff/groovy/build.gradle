@@ -1,0 +1,15 @@
+apply plugin: 'groovy'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.codehaus.groovy:groovy-all:2.5.2'
+	testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+}  
+
+sourceSets.main.groovy.srcDirs = ['src']
+sourceSets.test.groovy.srcDirs = ['test']
+
+defaultTasks 'clean', 'test'

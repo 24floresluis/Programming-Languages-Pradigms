@@ -1,0 +1,82 @@
+HW3 Due 11:59PM November 2
+
+In the questions below, assume a variable is immutable unless it is annotated with the word mutable. For example,
+
+let var1 = 10
+let mutable var2 = 4
+
+var1 can't be changed, var2 may be changed.
+
+Also, assume that all variables are passed by value, unless prefixed with a ref. That is, for example,
+
+aFunction(param1, ref param2) {
+  param1 = 15
+  param2 = 42
+}            
+
+let mutable var3 = 4
+let mutable var4 = 4
+aFunction(var3, var4)
+
+var3 did not change, a copy of it was sent to aFunction. On the other hand, var4 is now 42 after the call.
+
+Given the above details, answer these questions.
+
+1. What is a pure function?
+
+A pure function is one whose return value is determined entirely by its inputs and nothing else. This also means that the function does not have any side effects; it is similar to a function in mathematics that always behaves identically for the same parameters. To elaborate, the function cannot do things like print statements or change program state to be pure, it must only return deterministically based on its inputs.
+
+For example, the example function above called "aFunction" is not a pure function because it modifies its second input, param2. Mutation of non-local variables is prohibited in order for the function to be pure. Similarly, dependency on non-local mutable variables is also not allowed as the return value could then have variation. Therefore, calling aFunction may affect the program differently depending on when it is called, as the variable that param2 references could be expected to be something else.
+
+2. What are the reasons that functional programming emphasizes that functions be pure?
+
+There are many benefits to having only pure functions when using functional programming. For example, writing tests is much easier when all your functions are pure, because otherwise it may be difficult to test things outside the function's scope, create complicated and specific scenarios, ensure that the function performed console I/O, etc., instead of a simple assertion paired with an expected return value.
+
+Another reason to have pure functions is so that you can utilize memoization; if the function is pure then its return value will not vary with the same inputs, therefore you only need to compute the value once. Following from this idea, the program can also employ lazy evaluation and choose not to evaluate an expression until it is needed, which could potentially give incorrect results when working with impure functions.
+
+Lastly, pure functions are consistent and simpler. Because of their properties, this allows for parallelization. We can call multiple functions simultaneously and collect the results and expect them to be correct given that they are pure. Also, debugging issues when dealing with only pure functions should be much more manageable than their impure counterparts. The results may be wrong, but they will behave consistently wrong.
+
+3. Is the following a pure function? Give reasons for your answer.
+
+someFunction(input1, input2) {
+  return input1 + input2
+}
+
+Yes, the function receives copies of the values of input1 and input2 and simply returns their sum. It does not mutate anything or return a non-local variable.
+
+4. Is the following a pure function? Give reasons for your answer.
+
+someFunction(input1, input2) {
+  let mutable result = input1
+  result = result + input2
+  return result
+}
+
+
+Yes, mutability is permitted in a pure function if it only affects a local variable in the function body. Here, input1 and input2 are unchanged as they are passed by value, and thus the function will behave deterministically purely based on input1 and input2.
+
+5. Is the following a pure function? Give reasons for your answer.
+
+someFunction(ref input1, ref input2) {
+  input2 = input1 + input2
+  return input2
+}
+
+No, the function receives a reference to its arguments which alone makes it impure. However, it also mutates input2 which is not allowed. Thus, if we try to pass input2 to another function later in the program, it may not be the value we expect it to be.
+
+6. Is the following a pure function? Give reasons for your answer.
+
+someFunction(ref input1, ref input2) {
+  return input1 + input2
+}
+
+No, the function receives references as parameters and thus is impure. We can also conclude that it is not parallelizable, because if we run it alongside other processes the results could vary depending on the scheduling of the threads.
+
+Total [10]: 10
+
+1 [2]:
+2 [2]:
+3 [1]:
+4 [2]:
+5 [1]:
+6 [2]:

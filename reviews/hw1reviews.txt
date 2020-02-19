@@ -1,0 +1,48 @@
+[Reviewed 08/30/18 22:55 PM IST]
+synopsis: You're done 
+
+details:  
+
+You're done.
+
+------------------------------------------------------------------------------
+[Reviewed 08/30/18 06:06 AM IST]
+synopsis: almost done 
+
+details:
+Please spellcheck the entire document.
+
+Good examples and good work.
+
+------------------------------------------------------------------------------
+[Reviewed 08/28/18 07:30 AM IST]
+synopsis: let's group ideas together 
+
+details:
+Good first paragraph.
+
+Please slow down on the examples. Tell us what we will learn from an example. Then show the example code, mention the language, then discuss the example.
+
+It will be great to see something that is an expression in one language and statement in another.
+
+Drop the double quote around expressions (quotes make them a string).
+
+"Expressions are also immutable which means they do not change the value of variables" May be we mean that expressions do not force mutation. Because some expressions like a++ do cause mutation.
+
+"...which is essential in concurrent applications such" We need to slow down here and write a bit more to walk down the logical reasoning. Expressions do not force mutation, statements do. From the concurrency point of view, shared mutability is an issue, etc. etc.
+
+The last paragraph and the concurrency part in the previous paragraph can be combined. Then we can present in one place the pros and cons from the concurrency point of view.
+
+Then, we can focus on other aspects, differences, and consequences.
+
+The following may be useful to read: <http://blog.agiledeveloper.com/2015/08/functional-programming-favors.html>.
+
+------------------------------------------------------------------------------
+[Reviewed 08/25/18 04:04 AM MDT]
+synopsis: Please write in short paragraphs 
+
+details:                                  
+
+Please write in short paragraphs. Start with a high level discussion, give us a heads up on where we are heading. Then in short paragraphs, present one key idea at a time. Show examples. For each example, tell us what we will learn, show the code, and then discuss the significance of what we learned.
+
+------------------------------------------------------------------------------

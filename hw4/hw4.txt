@@ -1,0 +1,84 @@
+HW 4: Due 11:59PM December 1
+
+**There will be no reviews for this Homework**
+
+Feel free to give answers collectively, and also if you want to, you can call 
+out something specific to yourself different from your pair.
+
+(a) What languages did you use in this course? 
+
+    In total, we used Java, Ruby, Scala, Clojure, Haskell, Kotlin, Groovy, and
+    Python. We used Java, Ruby, and Scala for Assignment 1, Clojure, Haskell, and
+    Kotlin for Assignment 2, Groovy and Kotlin for Assignment 3, and Haskell and
+    Python for Assignment 4.
+
+(b) Which one of those you used for the first time?
+
+    For me (Diego), it was my first time using Ruby, Scala, Clojure, Haskell,
+    Kotlin, Groovy and even Python.
+
+
+
+    The languages I used for the first time were:
+        Ruby, Scala, Clojure, Haskell, Kotlin, Groovy and Python
+
+        - Luis
+        
+
+(c) What are your impressions about all the languages that you used (compare
+and contrast in your view)?
+
+    I (Diego) found the similarities among the functional languages fascinating,
+    although they work in different ways. The thought process for implementing a
+    functional solution may be somewhat uniform among the individual functional
+    languages but they all have very different tools and quirks for achieving the
+    goal. Also, I was surprised at the number of languages that use the JVM, I did
+    not expect to see such familiar syntax so often.
+
+
+
+    Upon writing this response I realized how, although many languages are very
+    different in terms of syntax and implementation strategies, they all revolve
+    around the same principles in terms of usage. Many share a lot of similar
+    aspects in terms of iterators and data structures. I found myself always
+    looking for elements that I was familiar with and always found them which
+    makes sense when you think about how they are taught to us without the
+    context of a specific language.
+
+        - Luis
+    
+
+(d) What did you learn mostly in this course (I'm interested in hearing
+your views, things you realized, things you found interesting, things
+you did not like so much about any particular language, etc.)?
+
+    I (Diego) still find coming up with immutable, functional solutions to be a
+    difficult puzzle. I am not sure if it will become the standard some day but that
+    world would be very different. The course was extremely interesting and a
+    fantastic opportunity to dip a little into all sorts of new languages and
+    totally different paradigms of programming, and I found appreciation for
+    languages like Ruby and Python with their nice, clean syntax and conventions. To
+    me, having a couple short lines to solve the problem using functional style was
+    enjoyable overall but still hard. In particular, I struggled to make sense of
+    Clojure, perhaps because of all the parentheses. I feel as though I learned the
+    basics of the functional paradigm, but more importantly, how to think in
+    different languages to solve problems.
+
+        
+
+    Languages aren't perfect and I have learned this and internalized it now
+    more than ever. Some are better at certain things than others and that's
+    perfectly fine. Static vs Dynamic, strict vs not, Imperative vs Functional,
+    all of these have their own place in development.
+
+    I now have a respect to functional languages since they implement things
+    completely different from what developers are used to from conventional
+    imperative languages. I have struggled the most with Haskell but it has
+    become my favorite language to butt heads with. I enjoy struggling now and
+    learning!
+    
+    Thanks Venkat!
+
+        - Luis
+
+Total[10]: 10

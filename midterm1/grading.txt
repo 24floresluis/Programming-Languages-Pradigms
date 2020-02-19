@@ -1,0 +1,22 @@
+Total [100]: 70
+
+q1 [10]:
+q2 [10]:
+q3 [10]: 
+
+That irresistible urge to write comments instead of self-documenting code.
+
+q4 [10]: -10
+
+q5 [10]: -5
+
+Mutating.
+
+q6 [10]:
+q7 [10]: -5
+Static and weak since it compiles down to JavaScript.
+
+q8 [10]: -10
+
+q9 [10]:
+q10 [10]:

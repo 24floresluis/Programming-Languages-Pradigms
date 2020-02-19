@@ -1,0 +1,5 @@
+Do not use recursion, do not write any tests. Use a dynamically typed language (no JavaScript).
+
+Write a program that reads a positive number (assume number entered is positive) from the console and prints prime numbers that are greater than the entered number, one per second, until the user terminates the program.
+
+Provide a script to easily run the program.

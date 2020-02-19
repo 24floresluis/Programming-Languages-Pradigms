@@ -1,0 +1,15 @@
+Write a function that takes a string where the characters will be numbers 
+only. The string may be of any length, zero or more. A given 
+string may contain the numbers "087237913776829423439457956" for example. 
+The function should return the number of occurrences of each number in the given string.
+
+Do not use recursion. Do not use any mutable variables anywhere in the code.
+
+You may use any language you like and save the source file with proper 
+extension. Use language conventions. Provide a build file to run the program. 
+Call the function with the following strings in your program:
+
+"087237913776829423439457956"
+"56876443467899987643322"
+"69742234677888888765543322222111"
+

@@ -1,0 +1,131 @@
+[Reviewed 10/25/18 05:14 AM PDT]
+synopsis: let's make it fluent 
+
+details:
+Kotlin:
+
+Let's make it fluent. Please see suggestions in code.
+
+Driver program missing, please see previous review.
+
+------------------------------------------------------------------------------
+[Reviewed 10/24/18 04:28 AM PDT]
+synopsis:  Let's make it fluent
+
+details:  
+
+Please see suggestions in code. 
+
+After making the changes, please proceed to implement the participants.
+
+Then write a driver program to run two sample dsls and print the output on the console. Let's run the driver from within the build file.
+
+------------------------------------------------------------------------------
+[Reviewed 10/23/18 05:22 AM PDT]
+synopsis: refactored, please move forward 
+
+details:                                 
+
+Please see suggestions in code.
+
+Please take the next step, a few more lines inside the block {}, start, end, and date
+
+------------------------------------------------------------------------------
+[Reviewed 10/22/18 03:40 AM PDT]
+synopsis: take small steps, please 
+
+details:
+Kotlin:
+
+Please take small steps. Lot of influent code vs. small amount of fluent code we can build on. Choose the latter, please.
+
+Please see suggestions in code.     
+
+After making these tests to pass, then write a third test where we call name within the {}.
+
+------------------------------------------------------------------------------
+[Reviewed 10/21/18 09:46 AM MSK]
+synopsis:  Good so far
+
+details:  
+
+Groovy: done
+
+Kotlin:
+
+Please do not leave behind commented out stuff.
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 10/20/18 11:16 AM MSK]
+synopsis: let's move code to where it belongs 
+
+details:                                     
+
+Please see suggestions in code.
+
+Let's start on the second language.
+
+------------------------------------------------------------------------------
+[Reviewed 10/19/18 15:53 PM MSK]
+synopsis: let's tweak a bit 
+
+details:                   
+
+Let's tweak a bit. Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 10/19/18 14:34 PM MSK]
+synopsis: found two language directories 
+
+details:                                
+
+Found two language directories. Delete one, keep the other. Then
+drop an email asking for review.
+
+------------------------------------------------------------------------------
+[Reviewed 10/18/18 12:26 PM CEST]
+synopsis: good work so far 
+
+details:                  
+
+In addition to the test, let's write a stand alone driver program that will run two different DSL samples and print the result on the console. Let's run that as part of the gradle build.
+
+------------------------------------------------------------------------------
+[Reviewed 10/17/18 05:10 AM MDT]
+synopsis: very nice progress 
+
+details:                    
+
+Very nice progress. Good work so far.
+
+Let's take a few more steps, let's work on the participants.
+
+------------------------------------------------------------------------------
+[Reviewed 10/16/18 21:38 PM MDT]
+synopsis: good so far 
+
+details:             
+
+Good so far. Please take the next small step—one line within the block {} in a new test.
+
+------------------------------------------------------------------------------
+[Reviewed 10/16/18 05:30 AM MDT]
+synopsis: let's change the testing tool 
+
+details:
+Let's use Spock to write tests instead of GroovyTestCase.
+
+After the canary test, let's write the following test
+                                                     
+void "test call schedule meeting"() {
+	expect:
+	  schedule.meeting {}
+}
+
+Let's make that test to pass. Then ask for a review by dropping an email.
+
+------------------------------------------------------------------------------
+groovy
+~Kotlin

@@ -1,0 +1,5 @@
+Display the current date in three different language REPLs. Show the 
+month name, date, and year (may use abbreviations like Oct, may include 
+additional details). Copy and paste your REPL session below, one after the 
+next for the three languages. Give a few lines of blank space between each 
+REPL session.

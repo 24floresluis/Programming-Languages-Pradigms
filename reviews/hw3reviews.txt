@@ -1,0 +1,72 @@
+[Reviewed 11/01/18 05:09 AM MDT]
+synopsis: You're done 
+
+details:
+                     
+Good work.
+
+------------------------------------------------------------------------------
+[Reviewed 10/31/18 05:54 AM MDT]
+synopsis: let's revisit six and add to two 
+
+details:
+1.
+
+Good
+
+2.
+
+parallelizable?
+
+6.
+
+The reasoning is not strong. Let's revisit and mention the consequences. We can use responses from question 2 here to say why this is not pure.
+
+------------------------------------------------------------------------------
+[Reviewed 10/30/18 05:06 AM MDT]
+synopsis: good so far 
+
+details:
+1.
+
+"Mutation of non-local variables is prohibited in order for the function to be pure." What about dependency on non-local mutable variables?
+     
+4.
+
+Good 
+
+5.
+
+Good
+
+
+------------------------------------------------------------------------------
+[Reviewed 10/28/18 06:00 AM PDT]
+synopsis: good start 
+
+details:
+1.
+
+Good so far. Can we think a bit more about dependency this function has on external state.
+
+2.
+
+?
+
+3.
+Good
+
+4.
+
+?
+
+5.
+
+Let's discuss the consequence of the change this function makes.
+
+6.
+
+?
+
+------------------------------------------------------------------------------
+26

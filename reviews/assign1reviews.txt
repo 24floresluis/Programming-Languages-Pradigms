@@ -1,0 +1,130 @@
+[Reviewed 09/13/18 17:30 PM CEST]
+synopsis: let's refactor 
+
+details:
+Ruby: done
+
+Scala:
+
+Please see suggestions in code.
+
+assign1.txt:
+Writing is rather weak and lacks in details.
+
+------------------------------------------------------------------------------
+[Reviewed 09/12/18 06:29 AM CEST]
+synopsis: let's move forward 
+
+details:
+Ruby:
+
+Please see suggestions in code.
+
+Scala:
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 09/11/18 14:45 PM CEST]
+synopsis: good so far 
+
+details:                               
+Ruby:
+
+Please see suggestions in code.
+
+Please move forward to the third language.
+
+------------------------------------------------------------------------------
+[Reviewed 09/10/18 08:02 AM MDT]
+synopsis: tests please 
+
+details:
+Ruby:
+
+Please delete sample.rb
+Please delete sample_test.rb
+
+NamesComputer.rb -> names_computer.rb
+NamesComputer_test.rb -> names_computer_test.rb
+
+SampleTest -> NamesComputerTest
+
+Please write more tests for the first function before moving to the second function.
+
+------------------------------------------------------------------------------
+[Reviewed 09/09/18 06:07 AM MDT]
+synopsis: let's move forward 
+
+details:
+
+Java: done
+
+Ruby: The directory is empty.
+
+Please move forward with the second language.
+
+------------------------------------------------------------------------------
+[Reviewed 09/08/18 05:16 AM MDT]
+synopsis: one language at a time, please 
+
+details:
+
+Java:
+
+Please see suggestions in code.
+
+Next language:
+
+I see three language directories when I should be seeing only two right now.
+
+We are currently finishing up work on Java. That says. Keep one more and delete the other. Then ask me to review the code and will take care of that later in the day.
+
+------------------------------------------------------------------------------
+[Reviewed 09/07/18 05:01 AM MDT]
+synopsis: make sure tests are passing before checking in code 
+
+details:
+Please do not leave anything commented out in code.
+
+Please move ending ); to the end of the line instead of being on a new line. I fixed in a few places, please fix the rest.
+
+Make sure all tests are passing before checking in code.
+
+Please implement the last method and then move on to the next language.
+
+------------------------------------------------------------------------------
+[Reviewed 09/05/18 05:57 AM MDT]
+synopsis: let's move forward 
+
+details:                     
+
+Good so far.
+
+Please see suggestions in code.
+
+Let's move forward to functional style functions in Java.
+
+------------------------------------------------------------------------------
+[Reviewed 09/04/18 09:20 AM MDT]
+synopsis: let's refactor 
+
+details:                
+
+Let's refactor.
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 09/03/18 08:36 AM MDT]
+synopsis: good start 
+
+details:            
+Good start. Code is structured well, good job.
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+Java
+Ruby
+~Scala

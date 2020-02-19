@@ -1,0 +1,19 @@
+Consider the following pseudo code.
+
+compute(n) = n
+respond(n) = 0
+
+main = print(respond(compute(7)))
+
+1. If this pseudocode were implemented in Java, C#, Python, C++, etc., discuss 
+what will happen when main is executed (not just the output, but the behavior 
+of code) and provide reasons for that behavior.
+
+Languages such as Java, C#, Python, and C++ use applicative order, or "call-by-value/reference" to evaluate calls like in the pseudocode, meaning they evaluate the arguments on the inside first before passing to the function. So in this case, it would evaluate compute(7) first and return a 7, then send that 7 to respond() and get a 0, and finally print that 0. This is because in applicative order, the arguments need to be resolved before applying to a function, so it naturally goes to the deepest level and works outward.
+
+2. If this pseudocode were implemented in a language like Haskell, discuss 
+what will happen when main is executed (not just the output, but the behavior 
+of code) and provide reasons for that behavior.
+
+In contrast, a language like Haskell uses normal order, or "call-by-name", meaning that the arguments are not evaluated before being applied to a function. So in our case, the program would work left to right and pass respond(compute(7)) to the print function, meaning that respond() evaluates what respond(compute(7)) means within itself. However, we see that respond() does not use its argument n at all. Thus, the argument is never evaluated and the 0 is simply returned without wasting time. This is because Haskell is smart enough to substitute the arguments directly into the body of the function, but since the argument does not appear at all, simply nothing is evaluated.
+

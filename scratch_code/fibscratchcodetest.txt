@@ -1,0 +1,15 @@
+pseudocode
+assert 1 = fib(0)
+assert 1,1 = fib(1)
+assert 1,1,2 = fib(2)
+assert 1,1,2,3 = fib(3)
+assert 1,1,2,3,5 = fib(4)
+assert 8 = fib(5)
+assert 89 = fib(10)
+for iterative:
+assert 20365011074 = fib(50)
+
+
+
+testFirstTwo = 
+  testCase "First two in sequence fib(1)" $ assertEqual [] [1, 1] (iterativeFib(1))
